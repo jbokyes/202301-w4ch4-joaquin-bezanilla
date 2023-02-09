@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Info } from "./core/components/info/info";
 import { Keyboard } from "./core/components/keyboard/keyboard";
 import { Actions } from "./core/components/actions/actions";
 

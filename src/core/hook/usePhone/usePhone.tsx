@@ -4,11 +4,15 @@ export type usePhoneStructure = ReturnType<typeof usePhone>;
 export function usePhone() {
   let initialState: string = "";
 
-  const [keyboard, setKeyboard] = useState(initialState);
+  let [keyboard, setKeyboard] = useState(initialState);
 
-  const handleClickNumber = (number: string) => {
+  const handlerClickNumber = (number: string) => {
     setKeyboard(keyboard + number);
   };
 
-  return { keyboard, handleClickNumber };
+  const handleClickDelete = () => {
+    setKeyboard((keyboard = ""));
+  };
+
+  return { keyboard, handlerClickNumber, handleClickDelete };
 }

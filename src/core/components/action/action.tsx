@@ -2,7 +2,7 @@
 export function Action() {
   return (
     <>
-      <span className="number">667359961</span>
+      <span className="number"></span>
       <a href="#" className="call">
         Call
       </a>
